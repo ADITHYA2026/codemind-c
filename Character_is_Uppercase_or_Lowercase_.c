@@ -1,15 +1,21 @@
 #include<stdio.h>
-void cha(char ch)
+int ul(char a)
 {
-if (ch>='A' && ch<='Z')
-printf("uppercase alphabet");
-else if (ch>='a' && ch<='z')
-printf("lowercase alphabet");
-else
-printf("not an alphabet");
+    if (a>='A' && a<='Z')
+    return 1;
+    else if (a>='a' && a<='z')
+    return 2;
+    else
+    return 3;
 }
 int main () {
-    char ch;
-    scanf("%c",&ch);
-    cha(ch);
+    char a,k;
+     scanf("%c",&a);
+     k=ul(a);
+     if (k==1)
+     printf("uppercase alphabet");
+     else if (k==2)
+     printf("lowercase alphabet");
+     else if (k==3)
+     printf("not an alphabet");
 }
