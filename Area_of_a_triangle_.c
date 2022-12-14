@@ -1,14 +1,13 @@
 #include<stdio.h>
-#include<math.h>
-void area(int a,int b)
+int ar(int a,int b)
 {
     int c;
     c=a*b*0.5;
-    printf("%d",c);
+    return c;
 }
-int main ()
-{
-    int a,b;
-    scanf("%d %d",&a,&b);
-    area(a,b);
+int main () {
+int a,b,e;
+scanf("%d %d",&a,&b);
+e=ar(a,b);
+printf("%d",e);
 }
