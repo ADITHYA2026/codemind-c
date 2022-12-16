@@ -1,14 +1,14 @@
 #include<stdio.h>
-#include<math.h>
-void sum(int a)
+int sum(int n)
 {
-    int c;
-    c=a*(a+1)*0.5;
-    printf("%d",c);
+    int sn;
+    sn=n*(n+1)*0.5;
+    return sn;
 }
-int main ()
+int main()
 {
-    int a;
-    scanf("%d",&a);
-    sum(a);
+    int n,a;
+    scanf("%d",&n);
+    a=sum(n);
+    printf("%d",a);
 }
