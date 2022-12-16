@@ -1,19 +1,24 @@
+
 #include<stdio.h>
-#include<math.h>
-void rad(int a)
+float ar(float a)
 {
-    float c,d;
-    c=3.14*a*a;
-    d=2*3.14*a;
-    printf("%0.2f
-",c);
-    printf("%0.2f
-",d);
-    
+    float area;
+    area=3.14*a*a;
+    return area;
 }
-int main ()
+float pr(float a)
 {
-    int a;
-    scanf("%d",&a);
-    rad(a);
+    float per;
+    per=2*3.14*a;
+    return per;
+}
+int main()
+{
+    float a,b,c;
+    scanf("%f",&a);
+    b=ar(a);
+    c=pr(a);
+    printf("%0.2f
+%0.2f
+",b,c);
 }
