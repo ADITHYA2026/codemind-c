@@ -3,24 +3,24 @@ int main()
 {
     int n,r;
     scanf("%d",&n);
-    while(n>0)
+    while(n)
     {
         r=n%10;
         n=n/10;
         if(r%2 && n%2)
         {
-        printf("Odd");
-        return 0;
+            printf("Odd");
+            return 0;
         }
         else if(r%2==0 && n%2==0)
         {
-        printf("Even");
-        return 0;
+            printf("Even");
+            return 0;
         }
         else
         {
-        printf("Mixed");
-        return 0;
+            printf("Mixed");
+            return 0;
         }
     }
 }
