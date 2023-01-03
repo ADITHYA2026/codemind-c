@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 float ar(float a)
 {
