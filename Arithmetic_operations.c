@@ -1,27 +1,20 @@
 #include<stdio.h>
-#include<math.h>
-void op(int x,int y)
-{
-    int s,d,p,q,r;
-    s=x+y;
+int main () {
+    int a,b,s,e,p,q,r;
+    scanf("%d %d",&a,&b);
+    s=a+b;
     printf("Sum:%d
 ",s);
-     d=x-y;
+    e=a-b;
     printf("Difference:%d
-",d);
-     p=x*y;
+",e);
+    p=a*b;
     printf("Product:%d
 ",p);
-     q=x/y;
+    q=a/b;
     printf("Quotient:%d
 ",q);
-     r=x%y;
+    r=a%b;
     printf("Remainder:%d
 ",r);
-}
-int main ()
-{
-    int x,y;
-    scanf("%d %d",&x,&y);
-    op(x,y);
 }
